@@ -1,5 +1,6 @@
 const calculate = () => {
     document.getElementById("dMic").setCustomValidity("")
+    document.getElementById("dMare").setCustomValidity("")
     const dMic = parseFloat(document.getElementById("dMic").value);
     const dMare = parseFloat(document.getElementById("dMare").value);
     const oO = parseFloat(document.getElementById("oO").value);
@@ -19,27 +20,19 @@ const calculate = () => {
     const vO = Math.cos(u) * vA;
     const vo = Math.cos(u) * va;
 
-    const laA = document.getElementById("laA");
-    const s1 = document.getElementById("s1");
-    const s2 = document.getElementById("s2");
-    const s3 = document.getElementById("s3");
-    const uavo = document.getElementById("uavo");
-    const vol = document.getElementById("vol");
-    const cMic = document.getElementById("cMic");
-    const cMare = document.getElementById("cMare");
-
-    vol.value = (Math.PI / 3 * ((rMare * rMare * vo) - (rMic * rMic * vO))).toFixed(3);
-    cMic.value = (2 * Math.PI * rMic).toFixed(3);
-    cMare.value = (2 * Math.PI * rMare).toFixed(3);
-    laA.value = aA.toFixed(3);
-    uavo.value = (u * (360 / (2 * Math.PI))).toFixed(3);
-    s1.value = vA.toFixed(3);
-    s2.value = va.toFixed(3);
-    s3.value = ((360 * (rMare - rMic)) / Math.sqrt((rMare - rMic) * (rMare - rMic) + oO * oO)).toFixed(3);
+    document.getElementById("vol").value = (Math.PI / 3 * ((rMare * rMare * vo) - (rMic * rMic * vO))).toFixed(3);
+    document.getElementById("cMic").value = (2 * Math.PI * rMic).toFixed(3);
+    document.getElementById("cMare").value = (2 * Math.PI * rMare).toFixed(3);
+    document.getElementById("laA").value = aA.toFixed(3);
+    document.getElementById("uavo").value = (u * (360 / (2 * Math.PI))).toFixed(3);
+    document.getElementById("s1").value = vA.toFixed(3);
+    document.getElementById("s2").value = va.toFixed(3);
+    document.getElementById("s3").value = ((360 * (rMare - rMic)) / Math.sqrt((rMare - rMic) * (rMare - rMic) + oO * oO)).toFixed(3);
 }
 
 window.onload = () => {
     document.getElementById("dMic").value = 10;
     document.getElementById("dMare").value = 20;
     document.getElementById("oO").value = 5;
-}
+    calculate();
+};
