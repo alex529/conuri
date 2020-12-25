@@ -1,0 +1,39 @@
+.container {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    align-items: stretch;
+    margin: 20px;
+}
+
+.field {
+    /* display:inline-flex; */
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content:space-between;
+    align-items:stretch;
+    align-items: stretch;
+    margin-top: 5px;
+    /* border: 1px solid; */
+}
+
+.label {
+    justify-content: flex-start;
+    /* background-color: pink; */
+}
+.text {
+    width: 33%;
+    justify-content: flex-end;
+    resize: none;
+    /* background-color: blue; */
+}
+
+.desen  {
+    width: 100%;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}

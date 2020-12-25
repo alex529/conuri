@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script type="text/javascript" src="script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conuri</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="field">
+			<img class="desen" src="./desen.png" />
+		</div>
+		<div class="field">
+			<label class="label">Diametrul mic [A'B']:</label>
+			<input id="dMic" class="text" type="number" oninput="calculate()" />
+		</div>
+		<div class="field">
+			<label class="label">Diametrul mare [AB]:</label>
+			<input id="dMare" oninput="calculate()" class="text" type="number" />
+		</div>
+		<div class="field">
+			<label class="label">Inaltime [OO']:</label>
+			<input id="oO" oninput="calculate()" class="text" type="number" />
+		</div>
+		<div class="field">
+			<label class="label">Latura [VA'](Size 1):</label>
+			<input id="s1" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Latura [VA](Size 2):</label>
+			<input id="s2" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Unghiul la centru (Size 3):</label>
+			<input id="s3" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Latura [AA']:</label>
+			<input id="laA" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Unghiul (AVO):</label>
+			<input id="uavo" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Volumul:</label>
+			<input id="vol" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Circumferinta mica:</label>
+			<input id="cMic" class="text" type="number" readonly="readonly" />
+		</div>
+		<div class="field">
+			<label class="label">Circumferinta mare:</label>
+			<input id="cMare" class="text" type="number" readonly="readonly" />
+		</div>
+	</div>
+</body>
+
+</html>
